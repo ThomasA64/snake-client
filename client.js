@@ -14,6 +14,10 @@ const connect = function() {
 
     console.log('Successfully connected to the Server')
   })
+  conn.on('connect', () => {
+
+    console.log('Name: TGA')
+  })
   conn.on('data', (message) => {
 
     console.log(message)

@@ -16,7 +16,13 @@ const connect = function() {
   })
   conn.on('connect', () => {
 
-    console.log('Name: TGA')
+    conn.write('Name: TGA');
+    // conn.write('Move: up');
+    // conn.write('Move: up'); 
+    // conn.write('Move: up'); 
+    // conn.write('Move: up');
+    
+  
   })
   conn.on('data', (message) => {
 
